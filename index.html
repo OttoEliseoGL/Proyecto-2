@@ -26,11 +26,11 @@
                 </svg>
             </a>
             <a class="py-2 d-none d-md-inline-block" href="#">Inicio</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Blog</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Contacto</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Soporte</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Mision</a>
-            <a class="py-2 d-none d-md-inline-block" href="#">Vision</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Top Artistas</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Top Géneros</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Top Álbumes</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Top Canciones</a>
+            <a class="py-2 d-none d-md-inline-block" href="#">Quiénes Somos</a>
             <a class="py-2 d-none d-md-inline-block" href="#">Info</a>
         </div>
     </nav>
@@ -38,40 +38,72 @@
     <!-- CONTENIDO DE TU PAGINA -->
     <div class="container">
         <h1>Contenido de tu pagina</h1>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="col-md-12">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <button type="button" class="input-group-text btn btn-success btn-block" id="basic-addon1" onclick="agregarNombre()">Agregar Canción</button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Canción Favorita" aria-label="Canción Favorita" aria-describedby="basic-addon1" id="nombreInput">
+                            <button type="button" id="basic-addon1" onclick="limpiarStorage()" class="input-group-text btn btn-danger">Quitar Canción</button>
+                          </div>
+                    </div>
+                    <div class="col-md-12">
+                        
+                    </div>
+                    <div class="col-md-12 mt-3">
+                        <ul class="list-group" id="lista">
+                            <li class="list-group-item  d-flex justify-content-between align-items-center">
+                                A list item
+                                <button type="button" class="btn btn-danger btn-sm"> Quitar</button>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-light btn-block mb-2" onclick="limpiarStorage()" id="basic-addon1">Eliminar Lista</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
     <!-- CONTENIDO DE TU PAGINA -->
 
     <footer class="p-5">
         <div class="row">
             <div class="col-6 col-md">
-                <h5>Features</h5>
+                <h5>Beneficios</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
+                    <li><a class="text-muted" href="#">Spotify Gratis</a></li>
+                    <li><a class="text-muted" href="#">Apple Music Gratis</a></li>
+                    <li><a class="text-muted" href="#">Deezer Gratis</a></li>
 
                 </ul>
             </div>
             <div class="col-6 col-md">
-                <h5>Resources</h5>
+                <h5>Contacto</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
+                    <li><a class="text-muted" href="#">Email</a></li>
+                    <li><a class="text-muted" href="#">Fax</a></li>
+                    <li><a class="text-muted" href="#">Teléfono</a></li>
 
                 </ul>
             </div>
             <div class="col-6 col-md">
-                <h5>Resources</h5>
+                <h5>Redes</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Business</a></li>
-                    <li><a class="text-muted" href="#">Education</a></li>
+                    <li><a class="text-muted" href="#">Facebook</a></li>
+                    <li><a class="text-muted" href="#">Instagram</a></li>
+                    <li><a class="text-muted" href="#">Twitter</a></li>
 
                 </ul>
             </div>
             <div class="col-6 col-md">
-                <h5>About</h5>
+                <h5>Acerca De</h5>
                 <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
+                    <li><a class="text-muted" href="#">Nosotros</a></li>
+                    <li><a class="text-muted" href="#">Nuestros Anuncios</a></li>
+                    <li><a class="text-muted" href="#">Nuestra Locación</a></li>
 
                 </ul>
             </div>
